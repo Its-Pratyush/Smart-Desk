@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import NoteContext from "./NotesContext";
 
 const NoteState = (props) => {
-  const host = "http://localhost:8000";
+  const host = "https://smart-desk-mern.vercel.app";
   const initialState = [];
 
   const [notes, setNotes] = useState(initialState);
