@@ -2,7 +2,12 @@ const express = require("express");
 const app = express();
 const port = 8000;
 const connectToMongo = require("./db");
-const cors = require("cors");
+const cors = require(cors(
+  {
+    origin:["https://smart-desk-sj4n.vercel.app/"],
+    methods:["POST", "PUT", "DELETE", "GET"],
+    credentials: true
+);
 
 connectToMongo();
 app.use(cors());
