@@ -13,7 +13,7 @@ const SignupForm = ({ toggleForm }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`smart-desk-mern.vercel.app
+    const response = await fetch(`https://smart-desk-mern.vercel.app/
 /createuser`, {
       method: "POST",
       headers: {
