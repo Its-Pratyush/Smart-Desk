@@ -1,0 +1,85 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal .overlay-body {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay-body {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: var(--color-white);
+    padding: 14px 28px;
+    border-radius: 13px;
+    max-width: 600px;
+    min-width: 300px;
+    color: var(--color-dark);
+    text-align: center;
+
+}
+
+.modal-content input{
+ background-color: var(--background-overlay);
+  height: 30px;
+  width: 70%;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+
+
+
+.modal-content textarea{
+  background-color: var(--background-overlay);
+  width: 70%;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 20px;
+  color: var(--color-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+.modal-content button{
+  margin: 5px;
+}
+
+.close-modal {
+    padding: 5px 7px;
+    background-color: var(--color-warning);
+    border-radius: 3px;
+    font-weight: 700;
+  
+} 
+
+.submit{
+  padding: 5px  7px;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  font-weight: 700;
+}

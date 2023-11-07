@@ -1,0 +1,86 @@
+.news-container{
+
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    margin: 2rem;
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .news{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .news .news-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .news-nav input{
+    /* margin: 1rem; */
+    font-size: 1.5rem;
+    background: none;
+    border-bottom: 2px solid var(--color-dark-varient);
+    color: var(--color-dark);
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  
+  
+  
+  .card-container {
+    /* border: 2px solid black; */
+    margin-top: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 10px;
+    max-height: 75vh; 
+    overflow-y: auto; 
+    padding: 20px;
+  }
+  
+  .news-card {
+    min-width: calc(33.33% - 16px);
+    padding: 5px;
+    border: 1px solid var(--color-dark-varient);
+    border-radius: 8px;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    height: 300px; /* You can adjust the height of the cards as needed */
+  }
+  
+  /* Optional: Hover effect for the cards */
+  .news-card:hover {
+    box-shadow: var(--box-shadow)
+  }
+  
+  .news-card img{
+    height: 150px;
+  }
+  
+  .news-card h3{
+    margin: 5px;
+  }
+  
+  .news-card button{
+    margin: 10px;
+    border-radius: var(--border-radius-2);
+    width: 100px;
+    height: 30px;
+    background-color: var(--color-warning);
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+  }
+  

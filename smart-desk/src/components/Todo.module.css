@@ -1,0 +1,65 @@
+
+.todo-container{
+    /* border: 2px solid white; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+   }
+   
+   .todo-card{
+     margin-top: 10px;
+     display: grid;
+     grid-template-rows: 15rem auto;
+     height: 80%;
+     width: 100%;
+     background-color: var(--color-white);
+     border-radius: var(--card-border-radius);
+    
+   }
+   
+   
+   
+   .header{
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-top-right-radius: var(--card-border-radius);
+     border-top-left-radius: var(--card-border-radius);
+     background-color: var(--background-overlay);
+     color: var(--color-dark);
+   }
+   
+   .task{
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /* 3 cards per row, adjust width as needed */
+     gap: 10px; /* Add gap between cards */
+     max-height: 500px; /* Set a fixed height for the container, adjust as needed */
+     overflow-y: auto; 
+     padding: 20px;
+     border-bottom-left-radius:var(--card-border-radius) ;
+   
+   }
+
+
+   .header button{
+    background-color: var(--color-warning);
+    width: 7rem;
+    height: 3rem;
+    border-radius: var(--border-radius-2);
+    transition: 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+
+  }
+
+  .header button:hover{
+    width: 9rem;
+  }
