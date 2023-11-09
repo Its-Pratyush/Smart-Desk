@@ -23,7 +23,7 @@ app.use(express.json());
 
 // Available routes
 app.get("/", (req,res)=>{
-  res.send("Hello);
+  res.json("Hello");
 })
 app.use("/api/auth", require("./Routes/auth"));
 app.use("/api/notes", require("./Routes/notes"));
