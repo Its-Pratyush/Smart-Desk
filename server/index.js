@@ -7,7 +7,7 @@ const cors = require("cors"); // Correct the import statement
 connectToMongo();
 
 // Allow only a specific origin (replace with your actual frontend URL)
-const allowedOrigin = "https://smart-desk-sj4n.vercel.app/";
+const allowedOrigin = "https://smart-desk-sj4n.vercel.app";
 
 // Configure CORS options
 const corsOptions = {
